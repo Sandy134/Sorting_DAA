@@ -21,6 +21,8 @@ public class selectionSort {
             System.out.print(a[i]+" ");
         
         System.out.println();
+        
+        long start=System.currentTimeMillis();
         int min;
         for(i=0;i<n;i++)
         {
@@ -35,6 +37,9 @@ public class selectionSort {
                 }
             }
         }
+        
+        long end=System.currentTimeMillis();
+        System.out.println("Time complexity:"+(end-start));
         
         System.out.println("Sorted array:");
         for(i=0;i<n;i++)

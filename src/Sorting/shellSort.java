@@ -22,6 +22,8 @@ public class shellSort {
         
         System.out.println("");
         
+        long start=System.currentTimeMillis();
+        
         int diff=(n/2)+1;
         while(diff!=0)
         {
@@ -37,7 +39,8 @@ public class shellSort {
             }
             diff=diff/2;
         }
-        
+        long end=System.currentTimeMillis();
+        System.out.println("Time complexity:"+(end-start));
         System.out.println("Array after sorting:");
         for(i=0;i<n;i++)
             System.out.print(a[i]+" ");

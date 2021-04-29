@@ -22,6 +22,8 @@ public class modifiedBubbleSort {
         System.out.println();
         int flag;
         
+        long start=System.currentTimeMillis();
+        
         for(i=0;i<n-1;i++)
         {
             flag=0;
@@ -38,6 +40,8 @@ public class modifiedBubbleSort {
             if(flag==0)
                 break;
         }
+        long end=System.currentTimeMillis();
+        System.out.println("Time complexity:"+(end - start));
         
         System.out.println("Sorted array:");
         for(i=0;i<n;i++)

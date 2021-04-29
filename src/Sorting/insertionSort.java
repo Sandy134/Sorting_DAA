@@ -18,6 +18,8 @@ public class insertionSort {
         System.out.println("Array before sorting:");
         for(i=0;i<n;i++)
             System.out.print(a[i]+" ");
+        
+        long start=System.currentTimeMillis();
         int temp;
         for(i=1;i<n;i++)
         {
@@ -31,6 +33,8 @@ public class insertionSort {
                 }
             }
         }
+        long end=System.currentTimeMillis();
+        System.out.println("Time complexity:"+(end-start));
         System.out.println();
          System.out.println("Sorted array:");
         for(i=0;i<n;i++)
