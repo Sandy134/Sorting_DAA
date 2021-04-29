@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class bubbleSort {
     public static void main(String args[])
     {
+        
         int n;
         Scanner in=new Scanner(System.in);
         int i,j;
@@ -21,6 +22,8 @@ public class bubbleSort {
         
         System.out.println();
         
+        long start=System.currentTimeMillis();
+        
         for(i=0;i<n-1;i++)
         {
             for(j=0;j<n-i-1;j++)
@@ -33,6 +36,8 @@ public class bubbleSort {
                 }
             }
         }
+        long end = System.currentTimeMillis();
+        System.out.println("Time complexity:" + (end - start));
         
         System.out.println("Sorted array:");
         for(i=0;i<n;i++)
